@@ -1,0 +1,29 @@
+<!-- <table class="table" >
+  <tr style="text-align: center">
+    <th>Product Name</th>
+    <th>Price</th>
+    <th>Picture</th>
+    
+  </tr>
+  <tr *ngFor="let furniture of furnitures">  
+    <td>{{furniture.name}}</td>
+    <td>{{furniture.priceRange.selling.low}}</td>
+    <td><img style="height: 363px; width: 363px" src="{{furniture.hero.href}}"></td>
+  </tr>
+</table> -->
+
+<!-- <ul list-style="none">
+  <li *ngFor="let f of furnitures">
+    <nav>{{ f.name }}</nav>
+    <img style="height: 363px; width: 363px" src="{{f.hero.href}}">
+  </li>
+</ul> -->
+<div class="container">
+    <div class="row" >
+      <div class="col-md-4 item" *ngFor="let f of furnitures">
+          <nav>{{ f.name }}</nav>
+          <img style="height: 363px; width: 363px" src="{{f.hero.href}}" [routerLink]="['/furniture', f.id]">
+          <p class="price">{{ f.priceRange.selling.low | currency }}</p>
+      </div>
+    </div>
+  </div>

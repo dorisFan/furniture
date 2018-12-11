@@ -1,0 +1,31 @@
+/* #furnitureName {
+    position: relative;
+    top: 20px;
+    width: 363px;
+} */
+
+nav {
+  width: 363px;
+  height: 50px;
+  background: rgba(204, 193, 193, 0.562);
+  position: relative;
+  font: bolder;
+}
+
+.item {
+  width: 25%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price {
+  width: 60px;
+  position: relative;
+  background-color: rgba(75, 73, 73, 0.6);
+  color: aliceblue;
+  padding: 5px;
+  top: -55px;
+  left: 10px;
+}
+
